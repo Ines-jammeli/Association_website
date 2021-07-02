@@ -11,7 +11,7 @@
 
 <body>
 
-<div class="header">
+<div class="header" id="myHeader">
   <a  class="logo">Animals adoption</a>
   <div class="header-right">
     <a class="active" href="home.html">Home</a>
@@ -37,6 +37,24 @@
 
 <p> <b> Once adopted, try not to tell them that they are adopted or at least to be diplomatic when announcing that ! They are emotionally fragile !!! </b> </p>
 
+
+
+
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 </body> 
 

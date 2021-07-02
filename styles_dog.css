@@ -20,10 +20,15 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  color: black;
+  text-align: center;
+}
+
 p {
 	color: black;
 	font-size: 1.2em;
-	text-indent: 30px;
+	text-indent: 50px;
 }
 
 

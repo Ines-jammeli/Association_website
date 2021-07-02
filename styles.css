@@ -22,11 +22,16 @@ body {
 
 h1 {
   color: black;
+  background-color: white;
+  display: inline-flex;
 }
 
 p {
+  background-color: white;
 	color: black;
 	font-size: 1.2em;
+  display: inline-flex;
+  text-align: justify;
 }
 
 

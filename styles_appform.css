@@ -1,6 +1,10 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
+  background-image: url(https://thumbs.dreamstime.com/b/group-dogs-cats-front-white-background-sitting-60531244.jpg);
+  background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 * {

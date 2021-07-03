@@ -34,3 +34,5 @@ $("div#change").empty();
     }
 }
 
+
+$("#confirmadoption").click(function)

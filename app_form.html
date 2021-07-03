@@ -10,6 +10,18 @@
 </head>
 <body>
 
+<div class="header" id="myHeader">
+  <a  class="logo">Animals adoption</a>
+  <div class="header-right">
+    <a href="home.html">Home</a>
+    <a href="dog.html">Dog adoption</a>
+    <a href="cat.html">Cat adoption</a>
+    <a href="add.html">Add an animal to the shelter</a>
+    <a href="contact.html">Contact us</a>
+    <a href="about.html">About the association</a>
+  </div>
+</div>
+
   <img src="" alt="" width="" height="">
 
 <h1>I'm so glad that you chose me!</h1> <br />
@@ -35,10 +47,25 @@
 
     <hr>
 
-    <button type="submit" class="registerbtn">Confim my adoption</button>
+    <button type="submit" class="registerbtn" id="confirmadoption">Confim my adoption</button>
   </div>
 
 </form>
+
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
 
 </body>
 </html>

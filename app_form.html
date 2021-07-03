@@ -51,23 +51,20 @@
   </div>
 
 </form>
-
+<script src="animalsList.js"></script>
 <script >
   $("#confirmadoption").click(function(){
-    animalsList.push({Name: $("#first").val()+' '+$("#last").val(), email: $("#email").val(), tel: $("#tel").val()})})
-
+    contactList.push({Name: $("#first").val()+' '+$("#last").val(), email: $("#email").val(), tel: $("#tel").val().toString()});
+console.log(contactList)
+$("#first").val("")
+$("#last").val("")
+$("#email").val("")
+$("#tel").val("")
+})
 var form = document.getElementById("formsubmit");
-form.addEventListener("submit",function(e){e.preventDefault(); return false;});
+form.addEventListener("submit",function(event){event.preventDefault();});
 
 </script>
-
-
-
-
-
-
-
-
 
 <script type="text/javascript">
 window.onscroll = function() {myFunction()};

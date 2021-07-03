@@ -36,6 +36,9 @@
 </div>
 
 <dir class="change" id="change">
+
+
+
   <a href="app_form.html">
     <div class="gallery">
       <img src="https://chien.ouest-atlantis.com/images/tele/sloughi-006.jpg" id="Miloud_img" alt="Miloud" width="300" height="200">
@@ -60,24 +63,33 @@
     </div>
   </a>
 
-  <a href="app_form.html">
+<!-- <a href="app_form.html"> -->
     <div class="gallery">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpQQYrojBqg4QJ8WlkfvscTqMdHfH4GH-Cg&usqp=CAU" id="Louisa_img" alt="Louisa" width="300" height="200">
       <h3 name="Louisa">Louisa</h3>
       <p> 1 year old</p>
     </div>
- </a> 
-  </div>
- </dir>
+ <!-- </a> -->
 
- 
+  </dir>
+
 <script type="text/javascript">
-        document.getElementById("Fanta_img").addEventListener("click", function (){
-       var image_link=document.getElementById("Fanta_img").src 
-        console.log(image_link)
-  });
+$('div').click(function(){
+$(this).remove();
+})
+</script>
+
+<script type="text/javascript">
+  $('div').click(function(){
+    console.log('source'+$('img').attr('src'))
+  })
+        //document.getElementById("Fanta_img").addEventListener("click", function (){
+     //  var image_link=document.getElementById("Fanta_img").src 
+      //  console.log(image_link)
+ // });
  </script> 
 
+<!--
  <script type="text/javascript">
         document.getElementById("Miloud_img").addEventListener("click", function (){
        var image_link=document.getElementById("Miloud_img").src 
@@ -99,7 +111,7 @@
   });
  </script> 
 
-
+-->
 
 <script type="text/javascript">
 window.onscroll = function() {myFunction()};

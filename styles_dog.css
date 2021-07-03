@@ -121,3 +121,13 @@ table, th, td {
 #contatus {
 	text-align: center;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}

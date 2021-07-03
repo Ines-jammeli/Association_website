@@ -10,15 +10,15 @@
 </head>
 
 <body>
-
+<!--
    <script>
-    function storeName(){
-    var image_link=document.getElementsByTagName("img").src 
+    function storeName("Louisa_img"){
+    var image_link=document.getElementById("Louisa_img").src 
     console.log(image_link)
   }
-  </script>
+  </script> -->
 
-<div class="header">
+<div class="header" id="myHeader">
   <a  class="logo">Animals adoption</a>
   <div class="header-right">
     <a href="home.html">Home</a>
@@ -38,7 +38,7 @@
 
 <p> I'm waiting to become your faithful companion and guardian. </p>
 
-  <a href="app_form.html" onclick="storeName()">
+  <a href="app_form.html">
     <div class="gallery">
       <img src="https://chien.ouest-atlantis.com/images/tele/sloughi-006.jpg" id="Miloud_img" alt="Miloud" width="300" height="200">
       <h3 name="Miloud">Miloud </h3>
@@ -46,7 +46,7 @@
     </div>
   </a>
 
-   <a href="app_form.html" onclick="storeName()">
+   <a href="app_form.html">
      <div class="gallery">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK_ay4-_Fhaw6NmCL4-M0P5sohreTIlLKoOg&usqp=CAU" id="Fanta_img" alt="Fanta" width="300" height="200">
       <h3 name="Fanta">Fanta</h3>
@@ -54,7 +54,7 @@
     </div>
   </a>
 
-    <a href="app_form.html" onclick="storeName()">
+    <a href="app_form.html">
       <div class="gallery">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQschexxWS-_dwufrLngkEPKOK8-UnUU8JS0w&usqp=CAU" id="boby_img" alt="boby" width="300" height="200">
       <h3 name="boby">boby</h3>
@@ -62,16 +62,59 @@
     </div>
   </a>
 
-  <a  onclick="storeName()">
+  <!--<a  onclick="storeName()"> -->
     <div class="gallery">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpQQYrojBqg4QJ8WlkfvscTqMdHfH4GH-Cg&usqp=CAU" id="Louisa_img" alt="Louisa" width="300" height="200">
       <h3 name="Louisa">Louisa</h3>
       <p> 1 year old</p>
     </div>
-  </a>
+ <!-- </a> -->
   </div>
+ 
+<script type="text/javascript">
+        document.getElementById("Fanta_img").addEventListener("click", function (){
+       var image_link=document.getElementById("Fanta_img").src 
+        console.log(image_link)
+  });
+ </script> 
+
+ <script type="text/javascript">
+        document.getElementById("Miloud_img").addEventListener("click", function (){
+       var image_link=document.getElementById("Miloud_img").src 
+        console.log(image_link)
+  });
+ </script> 
+
+ <script type="text/javascript">
+        document.getElementById("boby_img").addEventListener("click", function (){
+       var image_link=document.getElementById("boby_img").src 
+        console.log(image_link)
+  });
+ </script> 
+
+ <script type="text/javascript">
+        document.getElementById("Louisa_img").addEventListener("click", function (){
+       var image_link=document.getElementById("Louisa_img").src 
+        console.log(image_link)
+  });
+ </script> 
 
 
+
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
  
 
   </body>

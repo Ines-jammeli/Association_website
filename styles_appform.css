@@ -72,3 +72,29 @@ a {
   background: white;
   padding: 10px;
 }
+
+ p {
+  color: black;
+  background-color: white;
+  display: inline-flex;
+  text-align: center;
+}
+
+h1 {
+  color: black;
+  background-color: white;
+  display: inline-flex;
+  text-align: center;
+}
+ h2 {
+  color: black;
+  background-color: white;
+  display: inline-flex;
+  text-align: center;
+}
+ h3 {
+  color: black;
+  background-color: white;
+  display: inline-flex;
+  text-align: center;
+}

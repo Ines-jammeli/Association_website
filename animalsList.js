@@ -39,4 +39,7 @@ var contactList=[{Name: 'Ines Jammeli', email: 'ines@gmail.com', tel:'52 155 155
 {Name: 'Souhayla Rhouma', email: 'souhayla@gmail.com', tel:'98 879 155'},
 {Name: 'Saif Hamidi', email: 'saif@gmail.com', tel:'21 155 692'},
 {Name: 'Cyrine Gharbi', email: 'cyrine@gmail.com', tel:'50 751 687'},
+{Name: 'Rime Essid', email: 'rime@gmail.com', tel:'98 751 752'},
+{Name: 'Khaoula Blel', email: 'Khaoula@gmail.com', tel:'22 453 685'},
+{Name: 'Eya Meddeb', email: 'eya@gmail.com', tel:'22 111 412'}
 ]

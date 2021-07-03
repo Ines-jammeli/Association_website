@@ -52,15 +52,18 @@
 
 </form>
 <script src="animalsList.js"></script>
+
 <script >
+  var listlength=contactList.length;
   $("#confirmadoption").click(function(){
     contactList.push({Name: $("#first").val()+' '+$("#last").val(), email: $("#email").val(), tel: $("#tel").val().toString()});
 console.log(contactList)
 $("#first").val("")
 $("#last").val("")
 $("#email").val("")
-$("#tel").val("")
-})
+$("#tel").val("")})
+if (contactList.length > listlength){
+   setTimeout(function(){window.location.replace("https://www.google.com/")}, 3000); }
 var form = document.getElementById("formsubmit");
 form.addEventListener("submit",function(event){event.preventDefault();});
 

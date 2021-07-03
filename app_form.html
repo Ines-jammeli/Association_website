@@ -26,21 +26,21 @@
 
 <h1>I'm so glad that you chose me!</h1> <br />
 <h2>Thank you</h2> <br />
-<h3>Please fill in this form with your personal information so that the association will contact you about me and arrange an appointment. I'm impatient to see my new home.</h3><br />
+<p> <b>Please fill in this form with your personal information so that the association will contact you about me and arrange an appointment. I'm impatient to see my new home. </b></p><br />
 
-<form action="/action_page.php">
+<form id="formsubmit" >
   <div class="container">
     <h1>Personal Information</h1>
     <hr>
 
     <label for="text"><b>First Name</b></label> 
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>  <br /> 
+    <input type="text" placeholder="Enter your first name" name="first" id="first" required>  <br /> 
 
     <label for="text"><b>Last Name</b></label>
-    <input type="text" placeholder="Enter Email" name="email" id="email" required>  <br /> 
+    <input type="text" placeholder="Enter your last name" name="last" id="last" required>  <br /> 
 
     <label for="text"><b>Email </b></label>
-    <input type="text"  placeholder="Enter Email" name="email" id="email" required>  <br /> 
+    <input type="text"  placeholder="Enter your Email" name="email" id="email" required>  <br /> 
 
     <label for="tel"><b>Tel</b></label>
     <input type="tel" style="margin-left:10px" placeholder="Telephone number" name="tel" id="tel" required> <br /> <br />
@@ -51,6 +51,23 @@
   </div>
 
 </form>
+
+<script >
+  $("#confirmadoption").click(function(){
+    animalsList.push({Name: $("#first").val()+' '+$("#last").val(), email: $("#email").val(), tel: $("#tel").val()})})
+
+var form = document.getElementById("formsubmit");
+form.addEventListener("submit",function(e){e.preventDefault(); return false;});
+
+</script>
+
+
+
+
+
+
+
+
 
 <script type="text/javascript">
 window.onscroll = function() {myFunction()};

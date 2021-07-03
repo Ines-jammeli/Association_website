@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="styles_appform.css">
+
+ <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+ <title>Adopt me</title>
+</head>
+<body>
+
+<div class="header" id="myHeader">
+  <a  class="logo">Animals adoption</a>
+  <div class="header-right">
+    <a href="home.html">Home</a>
+    <a href="dog.html">Dog adoption</a>
+    <a href="cat.html">Cat adoption</a>
+    <a class="active" href="add.html">Add an animal to the shelter</a>
+    <a href="contact.html">Contact us</a>
+    <a href="about.html">About the association</a>
+  </div>
+</div>
+
+  <img src="" alt="" width="" height="">
+
+<h1>Welcome to the new cuty among us!</h1> <br />
+<p>Please fill in this form with your personal information and the information related to your animal so that we can contact you.</p><br />
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Needed Information</h1>
+    <hr>
+
+    <label for="text"><b>First Name</b></label> 
+    <input type="text" placeholder="Enter your first name" name="first" id="first" required>  <br /> 
+
+    <label for="text"><b>Last Name</b></label>
+    <input type="text" placeholder="Enter your last name" name="last" id="last" required>  <br /> 
+
+    <label for="text"><b>Email </b></label>
+    <input type="text"  placeholder="Enter your Email" name="email" id="email" required>  <br /> 
+
+    <label for="text"><b>Animal's breed </b></label>
+    <input type="text"  placeholder="Enter the animal's breed" name="breed" id="breed" required>  <br /> 
+
+    <label for="text"><b> Animal's type </b></label>
+    <select id="animaltype" name="animaltype">
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+    </select> <br />  <br /> 
+
+    <label for="text"><b>Animal's age </b></label>
+    <input type="number"  placeholder="Enter the animal's age" name="age" id="age" required>  <br />  <br /> 
+
+    <label for="tel"><b>Tel</b></label>
+    <input type="tel" style="margin-left:75px" placeholder="Telephone number" name="tel" id="tel" required> <br /> <br />
+
+    <hr>
+
+    <button type="submit" class="registerbtn" id="add">Add me</button>
+  </div>
+
+</form>
+
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+</body>
+</html>

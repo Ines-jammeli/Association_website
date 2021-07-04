@@ -60,7 +60,8 @@
     localStorage.setItem('tel', $("#tel").val())
     localStorage.setItem('page', location.href)
     contactList.push({Name: $("#first").val()+' '+$("#last").val(), email: $("#email").val(), tel: $("#tel").val().toString()});
-console.log(contactList)
+    localStorage.setItem(contactList, contactList)
+
 
 
 $("#first").val("")

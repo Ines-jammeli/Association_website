@@ -38,7 +38,7 @@
 <dir class="change" id="changediv">
 <script type="text/javascript">
 function existingDogs(){
-
+  dogsList=JSON.parse(localStorage.getItem("dogsList"));
     for (i=0;i<dogsList.length;i++){
       $("#changediv").append("<a href=\"app_form.html\"> <div class=\"gallery\" id=\""+dogsList[i].name+"\"> <img src=\""+dogsList[i].src +" id=\""+ dogsList[i].id+ "alt=\""+dogsList[i].name+ "width=\"300\" height=\"200\"> <h3 name=\""+ dogsList[i].name +"\">"+ dogsList[i].name +"</h3> <p>"+ dogsList[i].age+ "year(s) old </p> </div> </a>")
     }
@@ -57,6 +57,7 @@ $('.gallery').click(function(){
     localStorage.setItem("src", $('#'+id+' > img').attr('src').slice(0, -4))
     localStorage.setItem('id', id)
     localStorage.setItem('page', location.href)
+    localStorage.setItem("dogsList", JSON.stringify(dogsList));
 
  $(this).remove();  
 })

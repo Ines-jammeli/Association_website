@@ -25,7 +25,7 @@ $("div#change").empty();
 
 
 function existingCats(){
-$("div#change").empty();
+$("div#change").empty(); 
 
     for (i=0;i<catsList.length;i++){
 	    $("div#change").append("<a href=\"app_form.html\"> <div class=\"gallery\"> <img src=\""+catsList[i].src +"id=\""+ catsList[i].id+ "alt=\""+catsList[i].name+ "width=\"300\" height=\"200\">")
@@ -43,3 +43,20 @@ var contactList=[{Name: 'Ines Jammeli', email: 'ines@gmail.com', tel:'52 155 155
 {Name: 'Khaoula Blel', email: 'Khaoula@gmail.com', tel:'22 453 685'},
 {Name: 'Eya Meddeb', email: 'eya@gmail.com', tel:'22 111 412'}
 ]
+
+
+if (localStorage.page==="file:///C:/Users/Ines/Desktop/git/Association_website/dog.html"){
+   for (var i=0;i<dogsList.length;i++){
+    if (localStorage.src===dogsList[i].src){
+      dogsList.splice(i,1);
+    }
+   }}
+   else if (localStorage.page==="file:///C:/Users/Ines/Desktop/git/Association_website/cat.html"){
+    for (var i=0;i<catsList.length;i++){
+    if (localStorage.src===catsList[i].src){
+      catsList.splice(i,1);
+    }
+   }
+  // localStorage.clear()
+ }
+   

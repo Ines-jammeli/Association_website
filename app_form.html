@@ -18,7 +18,6 @@
     <a href="cat.html">Cat adoption</a>
     <a href="add.html">Add an animal to the shelter</a>
     <a href="contact.html">Contact us</a>
-    <a href="about.html">About the association</a>
   </div>
 </div>
 
@@ -54,16 +53,25 @@
 <script src="animalsList.js"></script>
 
 <script >
-  var listlength=contactList.length;
+  //var listlength=contactList.length;
   $("#confirmadoption").click(function(){
+    localStorage.setItem('Name', $("#first").val()+' '+$("#last").val())
+    localStorage.setItem('email', $("#email").val())
+    localStorage.setItem('tel', $("#tel").val())
+    localStorage.setItem('page', location.href)
     contactList.push({Name: $("#first").val()+' '+$("#last").val(), email: $("#email").val(), tel: $("#tel").val().toString()});
 console.log(contactList)
+
+
 $("#first").val("")
 $("#last").val("")
 $("#email").val("")
 $("#tel").val("")})
-if (contactList.length > listlength){
-   setTimeout(function(){window.location.replace("https://www.google.com/")}, 3000); }
+
+ 
+
+//if (contactList.length > listlength){
+ //  setTimeout(function(){window.location.replace("file:///C:/Users/Ines/Desktop/git/Association_website/home.html")}, 3000); }
 var form = document.getElementById("formsubmit");
 form.addEventListener("submit",function(event){event.preventDefault();});
 

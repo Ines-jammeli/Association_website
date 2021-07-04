@@ -21,7 +21,6 @@
     <a href="cat.html">Cat adoption</a>
     <a href="add.html">Add an animal to the shelter</a>
     <a href="contact.html">Contact us</a>
-    <a href="about.html">About the association</a>
   </div>
 </div>
 
@@ -63,31 +62,39 @@
     </div>
   </a>
 
-<!-- <a href="app_form.html"> -->
+<a href="app_form.html"> 
     <div class="gallery">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpQQYrojBqg4QJ8WlkfvscTqMdHfH4GH-Cg&usqp=CAU" id="Louisa_img" alt="Louisa" width="300" height="200">
       <h3 name="Louisa">Louisa</h3>
       <p> 1 year old</p>
     </div>
- <!-- </a> -->
+</a> 
 
   </dir>
 
 <script type="text/javascript">
-$('div').click(function(){
+$('.gallery').click(function(){
 $(this).remove();
+console.log($('.gallery  > img').attr('src'))
+    localStorage.setItem("name", $('.gallery  > h3').attr('name'))
+    localStorage.setItem("src", $('.gallery  > img').attr('src'))
+    localStorage.setItem('id', $('.gallery  > img').attr('id'))
+    localStorage.setItem('page', location.href)
 })
 </script>
-
+<!--
 <script type="text/javascript">
-  $('div').click(function(){
-    console.log('source'+$('img').attr('src'))
-  })
+  $('img').click(function(){
+    console.log($('img').attr('src'))
+    localStorage.setItem("name", $('h3').attr('name'))
+    localStorage.setItem("src", $('img').attr('src'))
+    localStorage.setItem('id', $('img').attr('id'))
+  }) 
         //document.getElementById("Fanta_img").addEventListener("click", function (){
      //  var image_link=document.getElementById("Fanta_img").src 
       //  console.log(image_link)
  // });
- </script> 
+ </script>  -->
 
 <!--
  <script type="text/javascript">

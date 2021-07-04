@@ -21,7 +21,6 @@
     <a class="active" href="cat.html">Cat adoption</a>
     <a href="add.html">Add an animal to the shelter</a>
     <a href="contact.html">Contact us</a>
-    <a href="about.html">About the association</a>
   </div>
 </div>
 
@@ -66,6 +65,17 @@
     </div>
   </a>
   </div>
+
+  <script type="text/javascript">
+$('.gallery').click(function(){
+$(this).remove();
+console.log($('.gallery  > img').attr('src'))
+    localStorage.setItem("name", $('.gallery  > h3').attr('name'))
+    localStorage.setItem("src", $('.gallery  > img').attr('src'))
+    localStorage.setItem('id', $('.gallery  > img').attr('id'))
+    localStorage.setItem('page', location.href)
+})
+</script>
 
   <script type="text/javascript">
 window.onscroll = function() {myFunction()};

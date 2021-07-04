@@ -40,6 +40,9 @@
     <label for="text"><b>Email </b></label>
     <input type="text"  placeholder="Enter your Email" name="email" id="email" required>  <br /> 
 
+    <label for="text"><b>Animal's Name </b></label>
+    <input type="text"  placeholder="Animal's Name" name="animalName" id="animalName" required>  <br /> 
+
     <label for="text"><b>Animal's breed </b></label>
     <input type="text"  placeholder="Enter the animal's breed" name="breed" id="breed" required>  <br /> 
 
@@ -76,7 +79,10 @@
     localStorage.setItem('page', location.href)
     contactList.push({Name: $("#first").val()+' '+$("#last").val(), email: $("#email").val(), tel: $("#tel").val().toString()});
 console.log(contactList)
-    if ()
+    if ($("#animaltype").val()==='dog'){
+      dogsList.push({Name: $("#animalName").val(), breed: $("#breed").val(), src:'undefined',id: $("#animalName").val()+"_img", alt: $("#animalName").val(), age: $("#age").val()})}
+     else { catsList.push({Name: $("#animalName").val(), breed: $("#breed").val(), src:'undefined',id: $("#animalName").val()+"_img", alt: $("#animalName").val(), age: $("#age").val()})}
+
 
 $("#first").val("")
 $("#last").val("")

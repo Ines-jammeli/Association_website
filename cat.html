@@ -34,39 +34,96 @@
 
 
    <a href="app_form.html">
-    <div class="gallery">
-      <img src="https://i.pinimg.com/originals/f8/a4/18/f8a41832528f5b1f189b2e440e8bed8a.jpg" name="Michou_img" alt="Michou" width="300" height="200">
+    <div class="gallery" id="Michoudiv">
+      <img src="https://i.pinimg.com/originals/f8/a4/18/f8a41832528f5b1f189b2e440e8bed8a.jpg" name="Michou_img" alt="Michou" width="300" height="200" id="Michou_id">
       <h3 name="Michou">Michou </h3>
       <p>6 months old </p>
     </div>
     </a>
 
     <a href="app_form.html">
-      <div class="gallery">
-      <img src="http://static.aujardin.info/cache/th/img9/chat-poussette-600x450.jpg" name="Bichou_img" alt="Bichou" width="300" height="200">
+      <div class="gallery" id="Bichoudiv">
+      <img src="http://static.aujardin.info/cache/th/img9/chat-poussette-600x450.jpg" name="Bichou_img" alt="Bichou" width="300" height="200" id="Bichou_img">
       <h3 name="Bichou">Bichou</h3>
       <p >4 months old</p>
     </div>
     </a>
 
     <a href="app_form.html">
-      <div class="gallery">
-      <img src="https://farm5.static.flickr.com/4856/46828271741_f8fd486114.jpg" name="jarjoum_img" alt="jarjoum" width="300" height="200">
+      <div class="gallery" id="jarjoumdiv">
+      <img src="https://farm5.static.flickr.com/4856/46828271741_f8fd486114.jpg" name="jarjoum_img" alt="jarjoum" width="300" height="200" id="jarjoum_img">
       <h3 name="jarjoum">jarjoum</h3>
       <p>1 year old</p>
     </div>
     </a>
 
     <a href="app_form.html">
-    <div class="gallery">
-      <img src="http://tunisie.co/uploads/images/content/chat-200916-2.jpg" name="falfoula_img" alt="falfoula" width="300" height="200">
+    <div class="gallery" id="falfouladiv">
+      <img src="http://tunisie.co/uploads/images/content/chat-200916-2.jpg" name="falfoula_img" alt="falfoula" width="300" height="200" id="falfoula_img">
       <h3 name="falfoula">falfoula</h3>
       <p> 2 years old</p>
     </div>
   </a>
   </div>
 
-  <script type="text/javascript">
+<script src="animalsList.js"></script>
+
+<script type="text/javascript">
+$('#Michoudiv').click(function(){
+console.log($('#Michoudiv > img').attr('src'))
+    localStorage.setItem("name", $('#Michoudiv  > h3').attr('name'))
+    localStorage.setItem("src", $('#Michoudiv > img').attr('src'))
+    localStorage.setItem('id', $('#Michoudiv  > img').attr('id'))
+    localStorage.setItem('page', location.href)
+
+
+    $(this).remove();
+})
+</script>
+
+<script type="text/javascript">
+$('#Bichoudiv').click(function(){
+console.log($('#Bichoudiv > img').attr('src'))
+    localStorage.setItem("name", $('#Bichoudiv  > h3').attr('name'))
+    localStorage.setItem("src", $('#Bichoudiv > img').attr('src'))
+    localStorage.setItem('id', $('#Bichoudiv  > img').attr('id'))
+    localStorage.setItem('page', location.href)
+
+
+    $(this).remove();
+})
+</script>
+
+
+<script type="text/javascript">
+$('#jarjoumdiv').click(function(){
+console.log($('#jarjoumdiv > img').attr('src'))
+    localStorage.setItem("name", $('#jarjoumdiv  > h3').attr('name'))
+    localStorage.setItem("src", $('#jarjoumdiv > img').attr('src'))
+    localStorage.setItem('id', $('#jarjoumdiv  > img').attr('id'))
+    localStorage.setItem('page', location.href)
+
+
+    $(this).remove();
+})
+</script>
+
+
+<script type="text/javascript">
+$('#falfouladiv').click(function(){
+console.log($('#falfouladiv > img').attr('src'))
+    localStorage.setItem("name", $('#falfouladiv  > h3').attr('name'))
+    localStorage.setItem("src", $('#falfouladiv > img').attr('src'))
+    localStorage.setItem('id', $('#falfouladiv  > img').attr('id'))
+    localStorage.setItem('page', location.href)
+
+
+    $(this).remove();
+})
+</script>
+
+
+<!--  <script type="text/javascript">
 $('.gallery').click(function(){
 $(this).remove();
 console.log($('.gallery  > img').attr('src'))
@@ -75,7 +132,7 @@ console.log($('.gallery  > img').attr('src'))
     localStorage.setItem('id', $('.gallery  > img').attr('id'))
     localStorage.setItem('page', location.href)
 })
-</script>
+</script> -->
 
   <script type="text/javascript">
 window.onscroll = function() {myFunction()};

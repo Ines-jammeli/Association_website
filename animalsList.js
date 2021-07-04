@@ -1,16 +1,16 @@
 
 var dogsList=[
-{name: "Miloud", breed: "Tunisian dog", src: "https://chien.ouest-atlantis.com/images/tele/sloughi-006.jpg", id: "Miloud_img", alt: "Miloud", age:2 },
+{name: "Miloud", breed: "Tunisian dog", src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSBYXY3HkjTtNYJXQ6Kg7oxHotEzY1FmmJZQ&usqp=CAU", id: "Miloud_img", alt: "Miloud", age:2 },
 {name: "Fanta", breed: "Tunisian dog",src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK_ay4-_Fhaw6NmCL4-M0P5sohreTIlLKoOg&usqp=CAU", id: "Fanta_img", alt: "Fanta", age:3  },
 {name: "boby", breed: "Berger allemand",src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQschexxWS-_dwufrLngkEPKOK8-UnUU8JS0w&usqp=CAU", id: "boby_img", alt: "boby", age:5 },
 {name: "Louisa", breed: "Tunisian dog",src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDpQQYrojBqg4QJ8WlkfvscTqMdHfH4GH-Cg&usqp=CAU", id: "Louisa_img", alt: "Louisa", age:1  }
 ]
 
 var catsList=[
-{name: "Michou", breed: "Tunisian cat",src: "https://i.pinimg.com/originals/f8/a4/18/f8a41832528f5b1f189b2e440e8bed8a.jpg", id: "Michou_img", alt: "Michou", age:0.5  },
-{name: "Bichou", breed: "Tunisian cat",src: "http://static.aujardin.info/cache/th/img9/chat-poussette-600x450.jpg", id: "Bichou_img", alt: "Bichou", age:0.4  },
+{name: "Michou", breed: "Tunisian cat",src: "https://img.huffingtonpost.com/asset/5d02bb9c2400008c17907df3.jpeg?ops=scalefit_720_noupscale&format=webp", id: "Michou_img", alt: "Michou", age:0.5  },
+{name: "Bichou", breed: "Tunisian cat",src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfYIQWCtDnPpuEJA5trlxEFHoW9GaNCjbxwg&usqp=CAU", id: "Bichou_img", alt: "Bichou", age:0.4  },
 {name: "jarjoum", breed: "Tunisian cat",src: "https://farm5.static.flickr.com/4856/46828271741_f8fd486114.jpg", id: "jarjoum_img", alt: "jarjoum", age:1  },
-{name: "falfoula", breed: "Tunisian cat",src: "http://tunisie.co/uploads/images/content/chat-200916-2.jpg", id: "falfoula_img", alt: "falfoula", age:2  }
+{name: "falfoula", breed: "Tunisian cat",src: "https://st3.depositphotos.com/35165130/37747/i/450/depositphotos_377474434-stock-photo-cats-tunisia-sousse-medina-tunisia.jpg", id: "falfoula_img", alt: "falfoula", age:2  }
 ]
 /**
 function existingDogs(){

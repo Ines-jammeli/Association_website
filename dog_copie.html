@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles_dog.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="animalsList.js"></script>
+      <script src="animalsList.js"></script>
 
 </head>
 
@@ -50,18 +50,18 @@ existingDogs()
 
 
 <script type="text/javascript">
-$('.gallery').click(function(){
-  var id=$(this).attr("id")
-  localStorage.setItem("id",id)
-    localStorage.setItem("name", $('#'+id+'  > h3').attr('name'))
-    localStorage.setItem("src", $('#'+id+' > img').attr('src').slice(0, -4))
-    localStorage.setItem('id', id)
+$('#Louisadiv').click(function(){
+console.log($('#Louisadiv > img').attr('src'))
+    localStorage.setItem("name", $('#Louisadiv  > h3').attr('name'))
+    localStorage.setItem("src", $('#Louisadiv > img').attr('src'))
+    localStorage.setItem('id', $('#Louisadiv  > img').attr('id'))
     localStorage.setItem('page', location.href)
 
- $(this).remove();  
+
+    $(this).remove();
 })
 </script>
-<!--
+
 <script type="text/javascript">
 $('#Milouddiv').click(function(){
 console.log($('#Milouddiv > img').attr('src'))
@@ -113,7 +113,7 @@ console.log($('.gallery  > img').attr('src'))
     localStorage.setItem('id', $('.gallery  > img').attr('id'))
     localStorage.setItem('page', location.href)
 })
-</script> -->
+</script> 
 <!--
 <script type="text/javascript">
   $('img').click(function(){
@@ -150,7 +150,7 @@ console.log($('.gallery  > img').attr('src'))
   });
  </script> 
 
---> 
+-->
 
 <script type="text/javascript">
 window.onscroll = function() {myFunction()};
